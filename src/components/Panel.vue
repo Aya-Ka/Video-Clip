@@ -33,7 +33,8 @@ export default {
   margin-top: -20px;
   margin-left: 40px;
   margin-right: 40px;
-  margin-bottom: 10px
+  margin-bottom: 10px;
+  zoom: 0.5
 }
 
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div id="uploader">
-    <v-layout row wrap>
-      <v-flex xs1 class="text-xs-center">
+    <v-layout row>
+      <v-flex xs1 offset-xs3>
         <upload-btn 
           title="Upload"
           color="grey lighten-4"
@@ -9,11 +9,11 @@
           :fileChangedCallback="fileChanged"
         ></upload-btn>
       </v-flex>
-      <v-flex xs9 offset-xs2 flex-grow: 0>
+      <v-flex xs4 flex-grow: 0>
         <v-text-field
-          single-line
+          height="20px"
           outline
-          height="5px"
+          v-model='filePath'
         ></v-text-field>
       </v-flex>
     </v-layout>
@@ -30,9 +30,12 @@ export default {
   },
   methods: {
     fileChanged(file) {
-      console.log(file);
+      this.filePath = file.name;
     }
-  }
+  },
+  data: () => ({
+    filePath: "Please choose your video file"
+  })
 }
 </script>
 
@@ -42,10 +45,5 @@ export default {
   padding-top: 80px;
   padding-left: 150px;
   padding-right:150px;
-  /*background-color: red;*/
-}
-#styled-input {
-  height: 80px;
-  font-size: 20pt;
 }
 </style>

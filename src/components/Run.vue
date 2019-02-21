@@ -1,7 +1,9 @@
 <template>
- <v-flex id="run" xs3 offset-xs8>
+<div>
+ <v-flex id="run" xs1 offset-xs6>
    <v-btn small>Run</v-btn>
  </v-flex>
+</div>
 </template>
 
 

@@ -1,17 +1,19 @@
 <template>
  <div id="time-input">
-   <v-layout row wrap>
-     <v-flex xs1 offset-xs3>
+   <v-layout row>
+     <v-flex xs1 offset-xs4 align-self-center>
      <p>Clip From</p>
      </v-flex>
-     <v-flex><v-text-field
+     <v-flex xs1><v-text-field
         single-line
         outline
+        height=20px
       ></v-text-field></v-flex>
-     <v-flex><p>To</p></v-flex>
-     <v-flex><v-text-field
+     <v-flex xs1 align-self-center><p>To</p></v-flex>
+     <v-flex xs1><v-text-field
         single-line
         outline
+        height=20px
       ></v-text-field></v-flex>
   </v-layout>
   <TimeLineAdd/>
@@ -36,6 +38,5 @@ export default {
   padding-top: 20px;
   padding-left:150px;
   padding-right:150px;
-  /*background-color:blue;*/
 }
 </style>

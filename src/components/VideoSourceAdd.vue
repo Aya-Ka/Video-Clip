@@ -1,9 +1,9 @@
 <template>
- <v-flex xs10 offset-xs0>
  <div id="video-source-add">
+   <v-flex offset-xs3>
    <p>+ Tap to add one more video source</p>
+   </v-flex>
  </div>
- </v-flex>
 </template>
 
 
@@ -19,6 +19,5 @@ export default {
   padding-top: 10px;
   padding-left: 150px;
   padding-right:150px;
-  /*background-color: yellow;*/
 }
 </style>

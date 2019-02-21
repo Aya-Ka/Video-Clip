@@ -1,13 +1,18 @@
 <template>
- <v-flex id="time-line-add" xs10 offset-xs1>
-   <p>+ Tap to add one more timeline</p>
+ <v-flex id="time-line-add" offset-xs3 align-self-center>
+   <p v-on:click="addTimeLine">+ Tap to add one more timeline</p>
  </v-flex>
 </template>
 
 
 <script>
 export default {
-  name: "TimeLineAdd"
+  name: "TimeLineAdd",
+  methods: {
+    addTimeLine() {
+      console.log('clicked');
+    }
+  }
 }
 </script>
 
@@ -17,6 +22,5 @@ export default {
   padding-top: 10px;
   padding-left: 150px;
   padding-right:150px;
-  /*background-color: green;*/
 }
 </style>
